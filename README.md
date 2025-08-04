@@ -1,4 +1,4 @@
-# NeuroSites Test
+# NeuroSites
 
 *Open-source website templates for the neuroscience community.*
 
