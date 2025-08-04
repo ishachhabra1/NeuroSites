@@ -159,36 +159,3 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-
-/* Publications Section */
-.publication-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.publication {
-  background-color: white;
-  border-left: 4px solid #0077b6;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
-}
-
-.publication p {
-  margin-bottom: 0.5rem;
-  color: #333;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-.publication a {
-  text-decoration: none;
-  color: #0077b6;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.publication a:hover {
-  text-decoration: underline;
-}
