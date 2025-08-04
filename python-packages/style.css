@@ -58,7 +58,7 @@ nav a:hover {
 }
 
 main section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
@@ -67,10 +67,32 @@ h2 {
     color: #004d7a;
 }
 
+.example-block {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-left: 4px solid #004d7a;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.example-block h3 {
+    color: #003f5c;
+    margin-top: 0;
+}
+
 pre {
-    background: #eee;
+    background: #f0f0f0;
     padding: 1rem;
     overflow-x: auto;
+    border-radius: 5px;
+}
+
+.output-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
 }
 
 footer {

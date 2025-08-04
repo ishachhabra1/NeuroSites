@@ -21,4 +21,6 @@ project/
 └── assets/
     └── images/
         ├── logo.png
-        └── favicon.ico
+        ├── favicon.ico
+        ├── output_example1.png
+        └── output_example2.png
