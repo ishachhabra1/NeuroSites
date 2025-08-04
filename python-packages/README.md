@@ -1,15 +1,24 @@
 # Python Package Website Template
+## Deployment
 
-A simple website template for Python packages — ideal for documentation, installation guides, and showcasing features.
+To deploy the site:
 
-## Features
-- Clean landing page
-- Section for installation instructions
-- Section for usage examples
-- Links to GitHub repo and PyPI page
+1. Push to your GitHub repository.
+2. Enable GitHub Pages in the repository settings (set root to `/main` or `/docs` as needed).
+3. Your site will be live at `https://username.github.io/repo-name/`.
 
-## How to Use
-1. Replace placeholder text in `index.html` with your package details.
-2. Update `style.css` for colors and branding.
-3. Add your package logo or screenshots to `assets/images/`.
-4. Deploy to GitHub Pages.
+## Customization
+
+- `index.html`: Replace title, tagline, usage, and links.
+- `assets/images/`: Replace `logo.png` and optionally add a `favicon.ico`.
+- `style.css`: Modify colors and layout as needed.
+
+project/
+│
+├── index.html
+├── style.css
+├── README.md
+└── assets/
+    └── images/
+        ├── logo.png
+        └── favicon.ico
