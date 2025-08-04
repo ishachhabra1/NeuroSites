@@ -1,0 +1,47 @@
+name: Validate Template Structure
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Validate template structure
+        run: |
+          echo "Checking template structure..."
+
+          # List all top-level directories (excluding .github and others)
+          for dir in */ ; do
+            if [[ "$dir" == ".github/" || "$dir" == "assets/" ]]; then
+              continue
+            fi
+
+            # Check required files
+            for file in README.md index.html style.css script.js; do
+              if [ ! -f "$dir$file" ]; then
+                echo "❌ Missing $file in $dir"
+                exit 1
+              fi
+            done
+
+            # Check assets/images exists
+            if [ ! -d "$dir/assets/images" ]; then
+              echo "❌ Missing assets/images folder in $dir"
+              exit 1
+            fi
+
+            # Check folder name format (lowercase + hyphen)
+            folder_name=$(basename "$dir")
+            if [[ ! "$folder_name" =~ ^[a-z0-9-]+$ ]]; then
+              echo "❌ Folder name '$folder_name' is invalid (use lowercase + hyphens)"
+              exit 1
+            fi
+          done
+
+          echo "✅ All templates passed structure check!"
