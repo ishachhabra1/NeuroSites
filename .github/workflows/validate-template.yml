@@ -16,23 +16,28 @@ jobs:
         run: |
           echo "Checking template structure..."
 
-          # List all top-level directories (excluding .github and others)
+          # Loop through all top-level directories except .github
           for dir in */ ; do
-            if [[ "$dir" == ".github/" || "$dir" == "assets/" ]]; then
+            if [[ "$dir" == ".github/" ]]; then
               continue
             fi
 
-            # Check required files
+            # Skip non-directories (e.g., LICENSE, root README.md, .DS_Store)
+            if [ ! -d "$dir" ]; then
+              continue
+            fi
+
+            # Check required files inside template folder
             for file in README.md index.html style.css script.js; do
-              if [ ! -f "$dir$file" ]; then
+              if [ ! -f "${dir}${file}" ]; then
                 echo "❌ Missing $file in $dir"
                 exit 1
               fi
             done
 
-            # Check assets/images exists
-            if [ ! -d "$dir/assets/images" ]; then
-              echo "❌ Missing assets/images folder in $dir"
+            # Check that assets/images folder exists inside the template folder
+            if [ ! -d "${dir}assets/images" ]; then
+              echo "❌ Missing assets/images folder in ${dir}"
               exit 1
             fi
 
@@ -45,3 +50,4 @@ jobs:
           done
 
           echo "✅ All templates passed structure check!"
+
