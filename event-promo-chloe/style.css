@@ -5,16 +5,16 @@ body, h1, h2, p, ul {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Garamond, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #d51717;
   background-color: #f9f9f9;
 }
 
 /* Banner */
 .banner {
   text-align: center;
-  background-color: #004d7a;
+  background-color: #adcadb;
   color: #fff;
   padding: 2rem 1rem;
 }
