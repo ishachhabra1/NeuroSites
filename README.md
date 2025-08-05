@@ -55,7 +55,7 @@ This project and its templates are licensed under [CC BY 4.0](LICENSE).
 
 If you use or modify these templates, please credit **NeuroSites** and its contributors by including the following:
 
-> Templates provided by [NeuroSites](https://github.com/NeuroHackademy2025/NeuroSites)
+> Website templates provided by [NeuroSites](https://github.com/NeuroHackademy2025/NeuroSites).
 
 Contributors are listed in [CONTRIBUTORS.md](CONTRIBUTORS.md) and on the [GitHub contributors page](https://github.com/NeuroHackademy2025/NeuroSites/graphs/contributors).
 
