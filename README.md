@@ -48,3 +48,16 @@ See the [CONTRIBUTING.md](CONTRIBUTING.md) for structure and submission guidelin
 If you have suggestions for how NeuroSites could be improved, or want to report a bug, [open an issue](https://github.com/NeuroHackademy2025/NeuroSites/issues/new)! 
 
 ---
+
+## License & Attribution
+
+This project and its templates are licensed under [CC BY 4.0](LICENSE).
+
+If you use or modify these templates, please credit **NeuroSites** and its contributors by including the following:
+
+> Templates provided by [NeuroSites](https://github.com/NeuroHackademy2025/NeuroSites)
+
+Contributors are listed in [CONTRIBUTORS.md](CONTRIBUTORS.md) and on the [GitHub contributors page](https://github.com/NeuroHackademy2025/NeuroSites/graphs/contributors).
+
+---
+
