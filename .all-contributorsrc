@@ -15,7 +15,24 @@
       "name": "Chloe Hampson",
       "avatar_url": "https://avatars.githubusercontent.com/u/000000?v=4",
       "profile": "https://github.com/chlohamp",
-      "contributions": ["code", "design", "projectManagement"]
+      "contributions": [
+        "code",
+        "design",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "Jupablo93",
+      "name": "Jupablo93",
+      "avatar_url": "https://avatars.githubusercontent.com/u/203133881?v=4",
+      "profile": "https://github.com/Jupablo93",
+      "contributions": [
+        "code",
+        "design",
+        "projectManagement"
+      ]
     }
-  ]
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular"
 }
