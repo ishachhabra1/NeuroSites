@@ -11,6 +11,15 @@ Contributions are welcome via pull requests — see our [README](README.md) for 
 - Isha Chhabra
 - Menghan Yang
 
-## Contributors
-Contributors are listed automatically by GitHub here:  
-[View GitHub Contributors →](https://github.com/NeuroHackademy2025/NeuroSites/graphs/contributors)
+---
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
