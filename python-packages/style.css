@@ -85,6 +85,29 @@ pre {
     padding: 1rem;
     overflow-x: auto;
     border-radius: 5px;
+    margin: 0;
+}
+
+.code-block {
+    position: relative;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #004d7a;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.copy-btn:hover {
+    background: #0066a1;
 }
 
 .output-img {
@@ -124,5 +147,12 @@ footer {
 
     .logo {
         max-height: 70px;
+    }
+
+    .copy-btn {
+        top: 5px;
+        right: 5px;
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
     }
 }
