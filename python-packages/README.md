@@ -1,17 +1,29 @@
-# Python Package Website Template
-## Deployment
+# Python Neuroimaging Package Website Template
 
-To deploy the site:
+A simple, modular website template for Python packages — ideal for scientific packages like neuroimaging tools.
 
-1. Push to your GitHub repository.
-2. Enable GitHub Pages in the repository settings (set root to `/main` or `/docs` as needed).
-3. Your site will be live at `https://username.github.io/repo-name/`.
+## Features
 
-## Customization
+- Clean and responsive layout
+- Installation instructions
+- Usage examples with:
+  - Code blocks
+  - Output images
+  - Copy-to-clipboard buttons
+- Docs & GitHub links
 
-- `index.html`: Replace title, tagline, usage, and links.
-- `assets/images/`: Replace `logo.png` and optionally add a `favicon.ico`.
-- `style.css`: Modify colors and layout as needed.
+## How to Use
+
+1. Replace text in `index.html` with your package details.
+2. Put your logo and output images in `assets/images/`.
+3. Customize colors in `style.css`.
+4. Deploy using GitHub Pages.
+
+## Deploying
+
+- Push to your GitHub repo.
+- Enable GitHub Pages (root: `/main` or `/docs`).
+- Your site will be available at: `https://username.github.io/repo-name/`
 
 project/
 │
