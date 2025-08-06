@@ -1,3 +1,4 @@
+
 /* Reset basic styles */
 body, h1, h2, p, ul {
   margin: 0;
@@ -9,6 +10,30 @@ body {
   line-height: 1.6;
   color: #d51717;
   background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004d7a;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Banner */
