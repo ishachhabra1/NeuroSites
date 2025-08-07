@@ -1,8 +1,0 @@
-{
-  "title": "Python Neuroimaging Package Website",
-  "description": "A lightweight HTML template for showcasing and documenting Python neuroimaging packages. Includes installation, usage examples, features, and documentation links.",
-  "theme": "python-website-template1",
-  "type": "documentation",
-  "category": "python-packages",
-  "version": "1.0.0"
-}

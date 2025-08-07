@@ -412,10 +412,9 @@
                     <input type="text" id="searchInput" placeholder="Search templates...">
                     <div class="filter-buttons">
                         <button class="filter-btn active" data-category="all">All</button>
-                        <button class="filter-btn" data-category="lab">Lab</button>
-                        <button class="filter-btn" data-category="personal">Personal</button>
-                        <button class="filter-btn" data-category="event">Event</button>
-                        <button class="filter-btn" data-category="portfolio">Portfolio</button>
+                        <button class="filter-btn" data-category="lab">Lab Websites</button>
+                        <button class="filter-btn" data-category="personal">Personal Pages</button>
+                        <button class="filter-btn" data-category="package">Package Wikis</button>
                     </div>
                 </div>
             </div>
@@ -525,7 +524,7 @@
                             ${template.tags ? template.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : `<span class="tag">${template.category}</span>`}
                         </div>
                         <div class="template-actions">
-                            <a href="${template.demoUrl}" class="btn btn-primary" target="_blank">Live Demo</a>
+                            <a href="${template.demoUrl}" class="btn btn-primary" target="_blank">View Template</a>
                             <a href="${template.downloadUrl}" class="btn btn-secondary" target="_blank">View Code</a>
                         </div>
                     </div>
@@ -589,7 +588,7 @@
                                     id: templateDir.name,
                                     title: templateDir.name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
                                     description: `A ${categoryDir.name.replace('-', ' ')} template for neuroscience websites.`,
-                                    category: categoryDir.name.replace('-pages', '').replace('package-', '').replace('-', ''),
+                                    category: categoryDir.name.replace('-', ''),
                                     tags: [],
                                     preview: null,
                                     demoUrl: `templates/${categoryDir.name}/${templateDir.name}/`,
