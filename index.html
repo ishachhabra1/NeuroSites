@@ -14,8 +14,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #101532;
+            background: linear-gradient(135deg, #101532 0%, #1a1f42 100%);
             min-height: 100vh;
         }
 
@@ -26,9 +26,9 @@
         }
 
         header {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(250, 253, 255, 0.95);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(16, 21, 50, 0.2);
             padding: 2rem 0;
             margin-bottom: 3rem;
         }
@@ -37,10 +37,21 @@
             text-align: center;
         }
 
+        .logo-container {
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            max-height: 80px;
+            width: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
         h1 {
             font-size: 3rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #101532, #1a1f42);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -49,7 +60,7 @@
 
         .subtitle {
             font-size: 1.2rem;
-            color: #666;
+            color: #5a6b7a;
             margin-bottom: 2rem;
         }
 
@@ -63,7 +74,7 @@
         .stat {
             text-align: center;
             padding: 1rem;
-            background: rgba(102, 126, 234, 0.1);
+            background: rgba(16, 21, 50, 0.1);
             border-radius: 10px;
             min-width: 120px;
         }
@@ -71,19 +82,19 @@
         .stat-number {
             font-size: 2rem;
             font-weight: bold;
-            color: #667eea;
+            color: #101532;
         }
 
         .stat-label {
             font-size: 0.9rem;
-            color: #666;
+            color: #5a6b7a;
         }
 
         .search-filter {
-            background: white;
+            background: #fafdff;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(16, 21, 50, 0.15);
             margin-bottom: 3rem;
         }
 
@@ -98,16 +109,17 @@
         #searchInput {
             flex: 1;
             padding: 12px 20px;
-            border: 2px solid #e1e1e1;
+            border: 2px solid #e1e8ed;
             border-radius: 25px;
             font-size: 1rem;
             outline: none;
             transition: border-color 0.3s ease;
             min-width: 200px;
+            background: #fafdff;
         }
 
         #searchInput:focus {
-            border-color: #667eea;
+            border-color: #101532;
         }
 
         .filter-buttons {
@@ -118,18 +130,19 @@
 
         .filter-btn {
             padding: 8px 16px;
-            border: 2px solid #e1e1e1;
-            background: white;
+            border: 2px solid #e1e8ed;
+            background: #fafdff;
             border-radius: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-size: 0.9rem;
+            color: #101532;
         }
 
         .filter-btn:hover, .filter-btn.active {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
+            background: #101532;
+            color: #fafdff;
+            border-color: #101532;
         }
 
         .templates-grid {
@@ -140,9 +153,9 @@
         }
 
         .template-card {
-            background: white;
+            background: #fafdff;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(16, 21, 50, 0.15);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
@@ -150,17 +163,17 @@
 
         .template-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 40px rgba(16, 21, 50, 0.25);
         }
 
         .template-preview {
             height: 200px;
-            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            background: linear-gradient(45deg, #f0f4f7, #e8eff3);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.2rem;
-            color: #666;
+            color: #5a6b7a;
             position: relative;
             overflow: hidden;
         }
@@ -172,7 +185,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="20" fill="%23667eea" opacity="0.1"/><rect y="25" width="80" height="8" fill="%23667eea" opacity="0.2"/><rect y="38" width="60" height="8" fill="%23667eea" opacity="0.2"/><rect y="51" width="90" height="8" fill="%23667eea" opacity="0.2"/></svg>') center/cover;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="20" fill="%23101532" opacity="0.1"/><rect y="25" width="80" height="8" fill="%23101532" opacity="0.2"/><rect y="38" width="60" height="8" fill="%23101532" opacity="0.2"/><rect y="51" width="90" height="8" fill="%23101532" opacity="0.2"/></svg>') center/cover;
         }
 
         .template-info {
@@ -182,12 +195,12 @@
         .template-title {
             font-size: 1.3rem;
             font-weight: 600;
-            color: #333;
+            color: #101532;
             margin-bottom: 0.5rem;
         }
 
         .template-description {
-            color: #666;
+            color: #5a6b7a;
             font-size: 0.9rem;
             margin-bottom: 1rem;
             line-height: 1.4;
@@ -201,8 +214,8 @@
         }
 
         .tag {
-            background: rgba(102, 126, 234, 0.1);
-            color: #667eea;
+            background: rgba(16, 21, 50, 0.1);
+            color: #101532;
             padding: 0.3rem 0.8rem;
             border-radius: 15px;
             font-size: 0.8rem;
@@ -228,28 +241,28 @@
         }
 
         .btn-primary {
-            background: #667eea;
-            color: white;
+            background: #101532;
+            color: #fafdff;
         }
 
         .btn-primary:hover {
-            background: #5a6fd8;
+            background: #1a1f42;
             transform: translateY(-2px);
         }
 
         .btn-secondary {
             background: transparent;
-            color: #667eea;
-            border: 1px solid #667eea;
+            color: #101532;
+            border: 1px solid #101532;
         }
 
         .btn-secondary:hover {
-            background: #667eea;
-            color: white;
+            background: #101532;
+            color: #fafdff;
         }
 
         footer {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(250, 253, 255, 0.95);
             backdrop-filter: blur(10px);
             padding: 3rem 0;
             margin-top: 3rem;
@@ -257,7 +270,7 @@
         }
 
         .footer-content {
-            color: #666;
+            color: #5a6b7a;
             line-height: 1.8;
         }
 
@@ -270,7 +283,7 @@
         }
 
         .footer-links a {
-            color: #667eea;
+            color: #101532;
             text-decoration: none;
             font-weight: 500;
         }
@@ -282,14 +295,14 @@
         .no-results {
             text-align: center;
             padding: 3rem;
-            color: #666;
+            color: #fafdff;
             font-size: 1.1rem;
         }
 
         .loading {
             text-align: center;
             padding: 3rem;
-            color: #667eea;
+            color: #fafdff;
             font-size: 1.1rem;
         }
 
@@ -323,6 +336,9 @@
     <header>
         <div class="container">
             <div class="header-content">
+                <div class="logo-container">
+                    <img src="NeuroSites-logo.jpg" alt="NeuroSites Logo" class="logo" onerror="this.style.display='none'">
+                </div>
                 <h1>NeuroSites</h1>
                 <p class="subtitle">Open-source website templates for the neuroscience community</p>
                 
@@ -461,8 +477,7 @@
                         <h3 class="template-title">${template.title}</h3>
                         <p class="template-description">${template.description}</p>
                         <div class="template-tags">
-                            <span class="tag">${template.category}</span>
-                            ${template.tags ? template.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : ''}
+                            ${template.tags ? template.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : `<span class="tag">${template.category}</span>`}
                         </div>
                         <div class="template-actions">
                             <a href="${template.demoUrl}" class="btn btn-primary" target="_blank">Live Demo</a>
@@ -530,7 +545,7 @@
                                     title: templateDir.name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
                                     description: `A ${categoryDir.name.replace('-', ' ')} template for neuroscience websites.`,
                                     category: categoryDir.name.replace('-pages', '').replace('package-', '').replace('-', ''),
-                                    tags: [categoryDir.name.replace('-pages', '').replace('package-', '').replace('-', '')],
+                                    tags: [],
                                     preview: null,
                                     demoUrl: `templates/${categoryDir.name}/${templateDir.name}/`,
                                     downloadUrl: `https://github.com/NeuroHackademy2025/NeuroSites/tree/main/templates/${categoryDir.name}/${templateDir.name}`
@@ -547,6 +562,15 @@
                                         const manifestResponse = await fetch(manifestFile.download_url);
                                         const manifestData = await manifestResponse.json();
                                         templateInfo = { ...templateInfo, ...manifestData };
+                                    }
+                                    
+                                    // Ensure tags don't include duplicates of the category
+                                    if (templateInfo.tags && Array.isArray(templateInfo.tags)) {
+                                        templateInfo.tags = [...new Set(templateInfo.tags.filter(tag => tag !== templateInfo.category))];
+                                        // Add category as first tag if tags array is empty
+                                        if (templateInfo.tags.length === 0) {
+                                            templateInfo.tags = [templateInfo.category];
+                                        }
                                     }
                                     
                                     // Check for preview image
