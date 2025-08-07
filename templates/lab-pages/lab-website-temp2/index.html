@@ -2,34 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index - {LAB_NAME}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ LAB_NAME }}</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>{LAB_NAME}</h1>
-    <p>{TAGLINE}</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="updates.html">Lab Updates</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="software.html">Software</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+  <!-- Header Section -->
+  <header class="hero">
+    <h1 class="lab-name">{{ LAB_NAME }}</h1>
+    <p class="pi-name">Directed by {{ PI_NAME }}</p>
+    <p class="affiliation">{{ DEPARTMENT }}, {{ INSTITUTION }}</p>
+
+    <!-- Nav moved inside header -->
+    <nav class="lab-nav">
+      <a href="index.html">Home</a>
+      <a href="people.html">People</a>
+      <a href="updates.html">Lab Updates</a>
+      <a href="publications.html">Publications</a>
+      <a href="software.html">Software</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section>{{INTRODUCTION}}</section>
-  </main>
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h2>Introduction</h2>
+      <p>Welcome to the {{ LAB_NAME }}! We study {{ RESEARCH_AREA }} using {{ METHODS }}. Our goal is to {{ MISSION_STATEMENT }}.</p>
+      <p><em>We are a research group at the University of Example focused on understanding how the brain processes language and emotion during real-world experience. We combine fMRI, behavioral experiments, and computational modeling to uncover mechanisms of human cognition.</em></p>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="featured">
+      <h2>Featured Work</h2>
+      <p>{{ FEATURED_TITLE }}</p>
+      <p>{{ SHORT_DESCRIPTION }}</p>
+    </section>
+  </div>
 
   <footer>
-    <p>© {YEAR} {LAB_NAME}</p>
+    <p>© {{ YEAR }} {{ LAB_NAME }}</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
+
 </html>

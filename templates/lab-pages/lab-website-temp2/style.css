@@ -1,55 +1,88 @@
+/* ---------- Base Styles ---------- */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #333;
-}
-
-header {
-  background-color: #0e76a8;
-  color: white;
-  padding: 1.5rem;
+  background-color: #f0faff;
+  color: #222;
   text-align: center;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0 0;
-  font-size: 1.25rem;
-}
-
-nav ul li {
-  margin: 0 1.5rem;
-}
-
-nav ul li a {
+a {
+  color: #1a0dab;
   text-decoration: none;
-  color: white;
-  font-weight: bold;
 }
 
-nav ul li a:hover {
+a:hover {
+  color: #00796b;
   text-decoration: underline;
 }
 
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+strong {
+  color: #333;
 }
 
-h1, h2 {
-  color: #0e76a8;
+/* ---------- Layout Containers ---------- */
+.container {
+  max-width: 900px;
+  margin: 1.5em auto;
+  padding: 0 20px;
+  text-align: left;
 }
 
-footer {
+/* ---------- Hero Header ---------- */
+.hero {
+  background-color: #0d7aa5;
+  color: black;
   text-align: center;
-  padding: 1rem;
-  background-color: #f0f0f0;
-  color: #666;
-  margin-top: 3rem;
+  padding: 2em 1em 1em;
+}
+
+.lab-name {
+  font-size: 2.5em;
+  color: black;
+  margin-bottom: 0.2em;
+}
+
+.pi-name,
+.affiliation {
+  font-size: 1.1em;
+  color: #222;
+  margin: 0.2em 0;
+}
+
+/* ---------- Navigation Bar ---------- */
+/* ---------- Navigation ---------- */
+/* ---------- Navigation (Transparent & Clean) ---------- */
+.lab-nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em 0;
+  margin-top: 1em;
+}
+
+.lab-nav a {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.5em 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.lab-nav a:hover {
+  color: #d2f4ff;
+}
+
+.lab-nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 3px;
+  background-color: #d2f4ff;
+  border-radius: 1px;
 }
